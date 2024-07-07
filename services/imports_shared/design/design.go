@@ -9,7 +9,7 @@ import (
 var _ = Service("AsJson", func() {
 	Method("index", func() {
 		Description("Returns all rows")
-		Result(CollectionOf(shared.Row))
+		Result(ArrayOf(shared.Row))
 		HTTP(func() {
 			GET("/")
 		})
