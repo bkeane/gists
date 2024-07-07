@@ -21,4 +21,6 @@ var Row = ResultType("application/vnd.goa.row", "Row", func() {
 		Field(1, "first")
 		Field(1, "last")
 	})
+
+	Meta("struct:pkg:path", "types")
 })
