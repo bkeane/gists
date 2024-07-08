@@ -10,9 +10,7 @@ var _ = Service("AsJson", func() {
 	Method("index", func() {
 		Description("Returns all rows")
 
-		Result(CollectionOf(shared.Row), func() {
-			View("benign")
-		})
+		Result(CollectionOf(shared.Row))
 
 		HTTP(func() {
 			GET("/")
